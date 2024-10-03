@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/test",
+    "method": "GET",
+    "http_status": 200,
+    "body": {"data": "test"},
+    "latency": 1000
+  },
+  {
+    "path": "/coba",
+    "method": "GET",
+    "http_status": 200,
+    "body": {"data": "coba"},
+    "latency": 500
+  },
+  {
+    "path": "/error",
+    "method": "GET",
+    "http_status": 500,
+    "body": {"code": "500", "message": "Internal Server Error"},
+    "latency": 2000
+  }
+]
