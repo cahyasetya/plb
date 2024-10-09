@@ -16,6 +16,9 @@ vet:
 build:
 	go build -o out/$(BINARY) .
 
+build-linux:
+	env GOOS=linux GOARCH=amd64 go build -o plb main.go
+
 # Clean up the binary
 clean:
 	rm -f out/$(BINARY)
