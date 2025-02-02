@@ -29,6 +29,10 @@ func pingHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("pong"))
 }
 
+func test2(){
+
+}
+
 // apiHandler processes incoming requests based on the API definition.
 func apiHandler(w http.ResponseWriter, r *http.Request, api API) {
 	time.Sleep(time.Duration(api.Latency) * time.Millisecond)
